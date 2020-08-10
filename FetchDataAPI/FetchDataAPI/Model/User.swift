@@ -16,5 +16,5 @@ struct  UserModel : Decodable {
     let email : String?
     let first_name : String?
     let last_name : String?
-    let avatar_link : String?
+    let avatar : String?
 }

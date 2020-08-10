@@ -7,29 +7,34 @@
 //
 
 import UIKit
+import Kingfisher
 
 class UserTableViewCell: UITableViewCell {
+    
     
     var user: UserModel? {
         didSet {
             guard let users = user else { return }
-            if let firstName = users.first_name, let lastName = users.last_name {
-                nameLabel.text = "\(firstName) \(lastName)"
+            
+            if let firstName = users.first_name, let lastName = users.last_name , let id = users.id{
+                nameLabel.text = "\(id) \(firstName) \(lastName)"
             }
             if let email = users.email{
                 emailLabel.text = " \(email)"
             }
-            if let url = users.avatar_link {
-                guard let imageURL = URL(string: url) else { return }
-                
-                DispatchQueue.global().async {
-                    guard let imageData = try? Data(contentsOf: imageURL) else { return }
-
-                    let image = UIImage(data: imageData)
-                    DispatchQueue.main.async {
-                        self.profileImageView.image = image
-                    }
-                }
+            if let strUrl = users.avatar {
+                let url = URL (string: strUrl)                
+                self.profileImageView.kf.setImage(with: url)
+                //                guard let imageURL = URL(string: url) else { return }
+                //
+                //                DispatchQueue.global().async {
+                //                    guard let imageData = try? Data(contentsOf: imageURL) else { return }
+                //
+                //                    let image = UIImage(data: imageData)
+                //                    DispatchQueue.main.async {
+                //                        self.profileImageView.image = image
+                //                    }
+                //                }
             }
         }
     }
@@ -59,22 +64,22 @@ class UserTableViewCell: UITableViewCell {
         emailLabel.topAnchor.constraint(equalTo:self.nameLabel.bottomAnchor).isActive = true
         emailLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
         emailLabel.bottomAnchor.constraint(equalTo:containerView.bottomAnchor).isActive = true
-
         
         
-     }
-
-     required init?(coder aDecoder: NSCoder) {
-       super.init(coder: aDecoder)
-                
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
     }
     
     let nameLabel:UILabel = {
-            let label = UILabel()
-            label.font = UIFont.boldSystemFont(ofSize: 20)
-            label.textColor =  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor =  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     let emailLabel:UILabel = {
@@ -91,31 +96,31 @@ class UserTableViewCell: UITableViewCell {
         img.translatesAutoresizingMaskIntoConstraints = false // enable autolayout
         img.layer.cornerRadius = 35
         img.clipsToBounds = true
-                
-       return img
+        
+        return img
     }()
     
     let containerView:UIView = {
-      let view = UIView()
-      view.translatesAutoresizingMaskIntoConstraints = false
-      view.clipsToBounds = true // this will make sure its children do not go out of the boundary
-      return view
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.clipsToBounds = true // this will make sure its children do not go out of the boundary
+        return view
     }()
     
     
     
     
     
-
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-//    }
-
+    
+    //    override func awakeFromNib() {
+    //        super.awakeFromNib()
+    //        // Initialization code
+    //    }
+    //
+    //    override func setSelected(_ selected: Bool, animated: Bool) {
+    //        super.setSelected(selected, animated: animated)
+    
+    // Configure the view for the selected state
+    //    }
+    
 }
