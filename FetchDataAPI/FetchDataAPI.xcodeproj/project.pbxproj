@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,12 @@
 		5284CBFF24E055A7009974CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CBFE24E055A7009974CF /* User.swift */; };
 		5284CC0324E05F15009974CF /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC0224E05F15009974CF /* UserTableViewCell.swift */; };
 		5284CC0524E05FE5009974CF /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC0424E05FE5009974CF /* UserViewController.swift */; };
-		5284CC0724E077A0009974CF /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC0624E077A0009974CF /* GetUsers.swift */; };
 		5284CC0924E0EB70009974CF /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC0824E0EB70009974CF /* UserTableViewController.swift */; };
+		5284CC0B24E1E709009974CF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC0A24E1E709009974CF /* UserInfoViewController.swift */; };
+		5284CC1024E468A2009974CF /* BookingRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC0F24E468A2009974CF /* BookingRequestVC.swift */; };
+		5284CC1224E46A7A009974CF /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC1124E46A7A009974CF /* OrderVC.swift */; };
+		5284CC1424E46AE5009974CF /* BookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC1324E46AE5009974CF /* BookingVC.swift */; };
+		5284CC1624E46B24009974CF /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284CC1524E46B24009974CF /* StatusVC.swift */; };
 		52BF0F1F24DFE0420000CACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF0F1E24DFE0420000CACB /* AppDelegate.swift */; };
 		52BF0F2124DFE0420000CACB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF0F2024DFE0420000CACB /* SceneDelegate.swift */; };
 		52BF0F2324DFE0420000CACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF0F2224DFE0420000CACB /* ViewController.swift */; };
@@ -26,8 +30,12 @@
 		5284CBFE24E055A7009974CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5284CC0224E05F15009974CF /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		5284CC0424E05FE5009974CF /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		5284CC0624E077A0009974CF /* GetUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
 		5284CC0824E0EB70009974CF /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		5284CC0A24E1E709009974CF /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		5284CC0F24E468A2009974CF /* BookingRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRequestVC.swift; sourceTree = "<group>"; };
+		5284CC1124E46A7A009974CF /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		5284CC1324E46AE5009974CF /* BookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingVC.swift; sourceTree = "<group>"; };
+		5284CC1524E46B24009974CF /* StatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVC.swift; sourceTree = "<group>"; };
 		52BF0F1B24DFE0420000CACB /* FetchDataAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchDataAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BF0F1E24DFE0420000CACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52BF0F2024DFE0420000CACB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +97,11 @@
 				5284CC0224E05F15009974CF /* UserTableViewCell.swift */,
 				5284CC0824E0EB70009974CF /* UserTableViewController.swift */,
 				5284CC0424E05FE5009974CF /* UserViewController.swift */,
-				5284CC0624E077A0009974CF /* GetUsers.swift */,
+				5284CC0A24E1E709009974CF /* UserInfoViewController.swift */,
+				5284CC0F24E468A2009974CF /* BookingRequestVC.swift */,
+				5284CC1124E46A7A009974CF /* OrderVC.swift */,
+				5284CC1324E46AE5009974CF /* BookingVC.swift */,
+				5284CC1524E46B24009974CF /* StatusVC.swift */,
 			);
 			path = FetchDataAPI;
 			sourceTree = "<group>";
@@ -100,7 +112,6 @@
 				065A7246F9ACB1BC1470FBBE /* Pods-FetchDataAPI.debug.xcconfig */,
 				9439067A939795FE2CC98278 /* Pods-FetchDataAPI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -226,14 +237,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5284CC1424E46AE5009974CF /* BookingVC.swift in Sources */,
 				5284CBFF24E055A7009974CF /* User.swift in Sources */,
 				5284CC0524E05FE5009974CF /* UserViewController.swift in Sources */,
 				52BF0F2324DFE0420000CACB /* ViewController.swift in Sources */,
 				52BF0F1F24DFE0420000CACB /* AppDelegate.swift in Sources */,
+				5284CC1024E468A2009974CF /* BookingRequestVC.swift in Sources */,
+				5284CC0B24E1E709009974CF /* UserInfoViewController.swift in Sources */,
 				5284CC0324E05F15009974CF /* UserTableViewCell.swift in Sources */,
 				52BF0F2124DFE0420000CACB /* SceneDelegate.swift in Sources */,
 				5284CC0924E0EB70009974CF /* UserTableViewController.swift in Sources */,
-				5284CC0724E077A0009974CF /* GetUsers.swift in Sources */,
+				5284CC1624E46B24009974CF /* StatusVC.swift in Sources */,
+				5284CC1224E46A7A009974CF /* OrderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

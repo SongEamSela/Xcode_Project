@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let vc = UserViewController()
+        let vc = BookingRequestVC()
         
         let navigationVC = UINavigationController(rootViewController: vc)
         window?.rootViewController = navigationVC

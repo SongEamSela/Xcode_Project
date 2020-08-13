@@ -1,18 +1,22 @@
 PODS:
+  - CarbonKit (2.3.1)
   - Kingfisher (5.14.1):
     - Kingfisher/Core (= 5.14.1)
   - Kingfisher/Core (5.14.1)
 
 DEPENDENCIES:
+  - CarbonKit
   - Kingfisher (~> 5.14)
 
 SPEC REPOS:
   trunk:
+    - CarbonKit
     - Kingfisher
 
 SPEC CHECKSUMS:
+  CarbonKit: b60e24dbdb47179990d5e074efa87ab819c8de98
   Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
 
-PODFILE CHECKSUM: 3c9b3970f2d72e4784b924a3e5d80a74fce68738
+PODFILE CHECKSUM: 9cbdad573e95dc841eb41bbd5e76eb4301b6f360
 
 COCOAPODS: 1.9.3

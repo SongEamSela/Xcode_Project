@@ -6,6 +6,7 @@ target 'FetchDataAPI' do
   use_frameworks!
 
   pod 'Kingfisher', '~> 5.14'
+  pod 'CarbonKit'
 
   # Pods for FetchDataAPI
 
